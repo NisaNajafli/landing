@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --yasil: #039e02
+}
+header{
+    height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background-color: transparent;
+    padding: 20px 0;
+    z-index: 2;
+}
+#logo{
+    width: 180px;
+    height: 50px;
+}
+.nav-menu ul{
+    display: flex;
+    gap: 15px;
+    align-items: center
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font: 15px Montserrat;
+}
+.nav-menu ul li a:hover{
+    color: var(--yasil)
+}
+.nav-right{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-right a{
+    text-decoration: none;
+    color: #fff;
+    font: 15px Montserrat
+}
+.navphone{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.downloadnav a{
+    background-color: #fff;
+    color: #333 !important;
+    padding: 10px;
+    border-radius: 5px;
+}
+.downloadnav{
+    display: flex;
+    align-items: center;
+    
+}
+.downloadnav i{
+    border-bottom: 1px solid #fff;
+    border-right:1px solid #fff ;
+    border-top:1px solid #fff ;
+    padding: 7px;
+    border-radius: 5px;
+}
+.hero__section{
+    background: url(../img/bannerimg.webp) center/cover;
+    min-height: 100vh;
+    position: relative;
+}
+.hero__section-content{
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero__section-left p{
+    color: #fff;
+    width: 90%;
+    font: 300 12px Montserrat;
+}
+.hero__section-left a{
+    color: #fff;
+    text-decoration: none;
+    font: 15px Montserrat;
+}
+.hero__section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 20%;
+}
+.hero__section-right-texts {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: flex-start;
+}
+
+.hero__section-right-texts h1 {
+    font: 900 130px Montserrat;
+}
+
+.hero__section-right-texts h3 {
+    font: 700 50px Montserrat;
+}
+.hero__section-right{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    text-align: center;
+}
+.greenborder{
+    width: 14px;
+    height: 190px;
+    background: linear-gradient(to bottom, #03e802, #039f03, #048301);
+}
+
