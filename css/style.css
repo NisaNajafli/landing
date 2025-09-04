@@ -2,27 +2,32 @@
 :root{
     --yasil: #039e02
 }
+.container{
+    width: 1400px !important;
+    margin: auto;
+}
 header{
     height: 100%;
-}
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     position: fixed;
     width: 100%;
     left: 0;
+    z-index: 2;
+    background-color: transparent;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: transparent;
     padding: 20px 0;
-    z-index: 2;
 }
 #logo{
-    width: 180px;
+    width: 300px;
     height: 50px;
 }
 .nav-menu ul{
     display: flex;
-    gap: 15px;
+    gap: 20px;
     align-items: center
 }
 .nav-menu ul li a{
@@ -35,54 +40,58 @@ nav{
 }
 .nav-right{
     display: flex;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
     justify-content: center;
 }
 .nav-right a{
     text-decoration: none;
     color: #fff;
-    font: 15px Montserrat
+    font: 13px Montserrat
 }
 .navphone{
     display: flex;
-    gap: 6px;
+    gap: 10px;
     align-items: center;
-}
-.downloadnav a{
-    background-color: #fff;
-    color: #333 !important;
-    padding: 10px;
-    border-radius: 5px;
 }
 .downloadnav{
+    background-color: #fff;
+    color: #333 !important;
+    padding: 2px 5px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
-    
+    gap: 3px;
 }
-.downloadnav i{
-    border-bottom: 1px solid #fff;
-    border-right:1px solid #fff ;
-    border-top:1px solid #fff ;
-    padding: 7px;
-    border-radius: 5px;
+
+
+.nav-right a i{
+    border:  1px solid #333;
+    padding: 10px;
+    border-radius:5px;
+    background-color:#333
+}
+.nav-right a i:hover{
+    color: var(--yasil) !important;
 }
 .hero__section{
-    background: url(../img/bannerimg.webp) center/cover;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent 40%),
+    linear-gradient(to bottom, rgba(0,0,0,0.6), transparent 40%), url(../img/whiteblackbanner.jpg) center/cover;
     min-height: 100vh;
     position: relative;
 }
 .hero__section-content{
     position: absolute;
-    bottom: 5%;
+    bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 .hero__section-left p{
     color: #fff;
-    width: 90%;
-    font: 300 12px Montserrat;
+    width: 100%;
+    font: 300 10px Montserrat;
 }
 .hero__section-left a{
     color: #fff;
@@ -92,34 +101,44 @@ nav{
 .hero__section-left{
     display: flex;
     flex-direction: column;
-    gap: 100px;
-    width: 20%;
+    gap: 63px;
+    width: 13%;
+    margin-top: 47px;
 }
 .hero__section-right-texts {
     display: flex;
     flex-direction: column;
-    color: #fff;
+    /* color: #fff; */
     align-items: flex-start;
+}
+.hero__section-right-texts h1,
+.hero__section-right-texts h3 {
+    background: linear-gradient(to right, silver 0%, #f5f5f5 20%, white 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent;
 }
 
 .hero__section-right-texts h1 {
-    font: 900 130px Montserrat;
+    font: 900 100px Montserrat;
+    
 }
 
 .hero__section-right-texts h3 {
-    font: 700 50px Montserrat;
+    font: 700 40px Montserrat;
 }
 .hero__section-right{
     width: 80%;
     display: flex;
     align-items: center;
     gap: 10px;
-    justify-content: flex-start;
-    text-align: center;
+    justify-content: center;
 }
 .greenborder{
-    width: 14px;
-    height: 190px;
-    background: linear-gradient(to bottom, #03e802, #039f03, #048301);
+    width: 10px;
+    height: 148px;
+    background: linear-gradient(to bottom, #26d628, #21cc24 , #1db31f, #0e510f);
+    margin-top: 24px;
 }
 
