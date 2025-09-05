@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
-    --yasil: #039e02
+    --yasil: #069e2d
 }
 .container{
     width: 1400px !important;
@@ -21,9 +21,10 @@ nav{
     background-color: transparent;
     padding: 20px 0;
 }
-#logo{
-    width: 300px;
-    height: 50px;
+#logo img{
+    width: 130px;   /* 100px idi, böyütdüm */
+    height: auto;   /* nisbət pozulmasın deyə */
+    object-fit: contain;
 }
 .nav-menu ul{
     display: flex;
@@ -32,7 +33,7 @@ nav{
 }
 .nav-menu ul li a{
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font: 15px Montserrat;
 }
 .nav-menu ul li a:hover{
@@ -46,17 +47,20 @@ nav{
 }
 .nav-right a{
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font: 13px Montserrat
 }
 .navphone{
     display: flex;
-    gap: 10px;
     align-items: center;
+    border:  1px solid #333;
+    padding: 0px 7px;
+    border-radius:5px;
+    background-color:#333
 }
 .downloadnav{
-    background-color: #fff;
-    color: #333 !important;
+    background-color: #333;
+    /* color: #333 !important; */
     padding: 2px 5px;
     border-radius: 5px;
     display: flex;
@@ -89,12 +93,12 @@ nav{
 
 }
 .hero__section-left p{
-    color: #fff;
+    color: #ffffff;
     width: 100%;
     font: 300 10px Montserrat;
 }
 .hero__section-left a{
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font: 15px Montserrat;
 }
@@ -108,7 +112,7 @@ nav{
 .hero__section-right-texts {
     display: flex;
     flex-direction: column;
-    /* color: #fff; */
+    /* color: #ffffff; */
     align-items: flex-start;
 }
 .hero__section-right-texts h1,
@@ -141,4 +145,3 @@ nav{
     background: linear-gradient(to bottom, #26d628, #21cc24 , #1db31f, #0e510f);
     margin-top: 24px;
 }
-
