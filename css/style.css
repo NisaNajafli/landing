@@ -142,6 +142,7 @@ nav{
 .greenborder{
     width: 10px;
     height: 148px;
-    background: linear-gradient(to bottom, #26d628, #21cc24 , #1db31f, #0e510f);
+    /* background: linear-gradient(to bottom, #26d628, #21cc24 , #1db31f, #0e510f); */
+    background: var(--yasil);
     margin-top: 24px;
 }
