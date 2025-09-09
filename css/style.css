@@ -95,13 +95,13 @@ nav {
   font-size: 25px; color: var(--yasil); background-color: transparent; border: none; 
 }
 #wrappertg i{
-  font-size: 34px; color: var(--yasil);
+  font-size: 26px; color: var(--yasil);
 }
 #wrapperwp i{
-  font-size: 30px; color: var(--yasil);
+  font-size: 24px; color: var(--yasil);
 }
 #wrapperphone i{
-  font-size: 28px; color: var(--yasil);
+  font-size: 20px; color: var(--yasil);
 }
 .nav-right a {
   text-decoration: none;
@@ -198,7 +198,7 @@ nav {
   position: absolute;
   top: 106%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-25%, 0);
   color: #fff;
   padding: 20px;
   min-width: 400px;
@@ -208,8 +208,11 @@ nav {
   text-align: justify;
   
 }
+#about{
+  transform: translate(-50%, 0);
+}
 .dropdown-content p{
-    font: 13px Montserrat;
+    font: 14px Montserrat;
     line-height: 1.2;
 }
 
@@ -560,11 +563,11 @@ main{
   .hero__section-right-texts h1{
     font-size: 36px;
   }
-  nav{
+  /* nav{
     flex-direction: column;
     gap: 15px;
     margin-top: 10px;
-  }
+  } */
   .logo img{
     width: 80px;
   }
@@ -591,7 +594,7 @@ main{
 
 
 }
-@media (max-width: 384px){
+@media (max-width: 397px){
   .nav-menu ul li a {
         font-size: 10px;
         padding: 0px 10px;
@@ -614,6 +617,9 @@ main{
     z-index: 300;
     text-align: center;
   }
+  #logo img {
+        width: 69px;
+    }
 
 
 }

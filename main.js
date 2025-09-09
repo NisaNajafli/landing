@@ -83,3 +83,21 @@ mainDiv.addEventListener('click', function(){
   this.children.item(0).classList.toggle('fa-times');
   this.classList.toggle('open');
 });
+function downloadFiles() {
+    const pdfLink = document.createElement('a');
+    pdfLink.href = "files/Описательнаячасть(пример).pdf";   // PDF faylının yolu
+    pdfLink.download = "Описательнаячасть(пример).pdf";     // Yüklənəcək fayl adı
+    document.body.appendChild(pdfLink);
+    pdfLink.click();
+    document.body.removeChild(pdfLink);
+
+
+    setTimeout(() => {
+        const excelLink = document.createElement('a');
+        excelLink.href = "files/Финансовая модель(пример).xlsm";  // Excel faylının yolu
+        excelLink.download = "Финансовая модель(пример).xlsm";    // Yüklənəcək fayl adı
+        document.body.appendChild(excelLink);
+        excelLink.click();
+        document.body.removeChild(excelLink);
+    }, 1000); // 1 saniyə sonra ikinci faylı yüklə
+}
