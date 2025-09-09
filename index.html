@@ -6,7 +6,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="img/IMG_2243.ico">
+    <title>Бизнес-план</title>
 </head>
 <body>
     <header>
@@ -17,30 +18,57 @@
                 </div>
                 <div class="nav-menu">
                     <ul>
-                        <li><a href="">О нас</a></li>
-                        <li><a href="">Услуги</a></li>
-                        <li><a href="">Преимущества</a></li>
-                        <li><a href="">Контакты</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">О нас</a>
+                            <div class="dropdown-content">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore quod amet libero labore aut molestiae sunt, cum eligendi voluptatibus neque. Fugit id provident labore repudiandae, aperiam totam quis ipsum, amet architecto accusamus sapiente aliquid laboriosam delectus corrupti magnam dolorum. Maxime sit magni repudiandae voluptatibus dolorum ullam ipsum eveniet quam mollitia?</p>
+                            </div>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Бизнес планы </a>
+                            <div class="dropdown-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo expedita excepturi distinctio, dolorem sapiente ratione beatae possimus molestiae fuga reprehenderit officiis alias quidem vel sit enim voluptatem at laboriosam quod ea itaque natus necessitatibus nobis consequuntur minus. Commodi reprehenderit, voluptatum, fugiat dolore accusamus, similique officiis blanditiis sequi officia cumque totam.</p>
+                            </div>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Комплексный консалтинг</a>
+                            <div class="dropdown-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestias quasi, labore omnis cumque nam minima sit dolores accusamus, aut veritatis voluptas recusandae praesentium esse. Provident quae iure magni consectetur labore commodi ab ducimus voluptate ipsum fugiat. Et est ut similique eum nostrum praesentium. Esse tenetur eaque at temporibus illo?</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="nav-right">
-                    <a href="" ><i style="font-size: 20px; color: #fff;" class="fa-brands fa-whatsapp"></i></a>
-                    <a href=""><i style="font-size: 19px; color: #fff;" class="fa-brands fa-telegram"></i></a>
-                    <a href=""  class="navphone"><i style="font-size: 17px; color:#fff " class="fa-solid fa-phone"></i>+7 (999) 999 99 99</a>
-                    <a href="" class="downloadnav"> Скачать каталог <i style="font-size: 20px; color: var(--yasil); background-color: transparent; border: none " class="fa-regular fa-file-zipper"></i></a>
-                    
-
+                    <a href="" id="navwp" ><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="" id="navtg"><i  class="fa-brands fa-telegram"></i></a>
+                    <div class="icons">
+                        <a href=""  class="navphone"><i class="fa-solid fa-phone"></i>+7 (999) 999 99 99</a>
+                        <a href="" class="downloadnav"> Скачать пример работ <i class="fa-regular fa-file-zipper"></i></a>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
+
+    <div class="overlay"></div>
+
     <main>
+        <div class="wrapper">
+            <div id="main-div">
+                <div id="main-button" class="wave open">
+                    <i class="fas fa-comments fa-times"></i>
+                </div>
+                <a id="wrapperdown" class="downloadnav" > Скачать пример работ <i class="fa-regular fa-file-zipper"></i></a>
+                <a id="wrappertg" class="wrappericon" href=""><i id="wrappertg" class="fa-brands fa-telegram"></i></a>
+                <a id="wrapperwp" class="wrappericon" href="" ><i id="wrapperwp" class="fa-brands fa-whatsapp"></i></a>
+                <a  id="wrapperphone" class="wrappericon" href=""  ><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>
         <section class="hero__section">
             <div class="container">
                 <div class="hero__section-content">
                     <div class="hero__section-left">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis voluptatum neque adipisci commodi magnam odit magni?</p>
-                        <a href="">Scroll down</a>
                     </div>
                     <div class="hero__section-right">
                         <div class="greenborder"></div>
