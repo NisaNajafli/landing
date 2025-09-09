@@ -518,8 +518,11 @@ main{
     z-index: 300;
     text-align: center;
   }
+  #about{
+    transform: translate(-50%, -50%);
+  }
   .dropdown-content p{
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 @media (max-width: 815px){
@@ -549,7 +552,7 @@ main{
     text-align: center;
   }
   .dropdown-content p{
-    font-size: 18px;
+    font-size: 15px;
   }
 
 
@@ -573,7 +576,7 @@ main{
   }
 
   .dropdown-content p{
-    font-size: 13px;
+    font-size: 11px;
   }
   .dropdown-content {
     position: fixed;
@@ -606,7 +609,7 @@ main{
   .hero__section-right-texts h3{
     font-size: 15px;
   }
-  .dropdown-content p{
+  .dropdown-content{
     font-size: 10px;
     width: 70%;
     transform: translate(-50%, -50%);
@@ -616,6 +619,9 @@ main{
     position: fixed;
     z-index: 300;
     text-align: center;
+  }
+  .dropdown-content p{
+    font-size: 8px;
   }
   #logo img {
         width: 69px;
