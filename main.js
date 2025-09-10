@@ -1,34 +1,4 @@
-// const overlay = document.querySelector(".overlay");
-// const texts = document.querySelectorAll(".overlay-text");
-// const links = document.querySelectorAll(".nav-menu ul li a");
 
-// function showOverlay(id) {
-//     overlay.style.opacity = "1";
-//     texts.forEach(t => {
-//         t.classList.remove("active");
-//         if (t.id === id) t.classList.add("active");
-
-//     });
-// }
-
-// function hideOverlay() {
-//     overlay.style.opacity = "0";
-//     texts.forEach(t => t.classList.remove("active"));
-// }
-
-// links.forEach(link => {
-//     const targetId = link.getAttribute("data-target");
-
-//     link.addEventListener("mouseenter", () => showOverlay(targetId));
-//     link.addEventListener("mouseleave", hideOverlay);
-
-//     link.addEventListener("click", e => {
-//         e.preventDefault();
-//         showOverlay(targetId);
-//     });
-// });
-
-// overlay.addEventListener("click", hideOverlay);
 
 const overlay = document.querySelector(".overlay");
 const dropdowns = document.querySelectorAll(".has-dropdown");
@@ -46,11 +16,11 @@ function closeAll() {
   overlay.style.pointerEvents = "none";
 }
 
-// hər bir dropdown üçün eventlər
+
 dropdowns.forEach(drop => {
   const link = drop.querySelector("a");
 
-  // Desktop (hover)
+
   link.addEventListener("mouseenter", () => {
     if (window.innerWidth >= 992) {
       openDropdown(drop);
@@ -85,8 +55,8 @@ mainDiv.addEventListener('click', function(){
 });
 function downloadFiles() {
     const pdfLink = document.createElement('a');
-    pdfLink.href = "files/Описательнаячасть(пример).pdf";   // PDF faylının yolu
-    pdfLink.download = "Описательнаячасть(пример).pdf";     // Yüklənəcək fayl adı
+    pdfLink.href = "files/Описательнаячасть(пример).pdf";  
+    pdfLink.download = "Описательнаячасть(пример).pdf";     
     document.body.appendChild(pdfLink);
     pdfLink.click();
     document.body.removeChild(pdfLink);
@@ -94,10 +64,10 @@ function downloadFiles() {
 
     setTimeout(() => {
         const excelLink = document.createElement('a');
-        excelLink.href = "files/Финансовая модель(пример).xlsm";  // Excel faylının yolu
-        excelLink.download = "Финансовая модель(пример).xlsm";    // Yüklənəcək fayl adı
+        excelLink.href = "files/Финансовая модель(пример).xlsm";  
+        excelLink.download = "Финансовая модель(пример).xlsm";    
         document.body.appendChild(excelLink);
         excelLink.click();
         document.body.removeChild(excelLink);
-    }, 1000); // 1 saniyə sonra ikinci faylı yüklə
+    }, 1000); 
 }

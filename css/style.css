@@ -5,8 +5,10 @@
 }
 
 .container {
-  width: 1400px !important;
+  max-width: 1400px !important;
+  width: 100%;
   margin: auto;
+  padding: 0 30px;
 }
 
 header {
@@ -50,20 +52,15 @@ nav {
   position: relative;
   z-index: 30;
   padding: 0 25px;
+  border-bottom: 4px solid transparent;
 }
 
 .nav-menu ul li a:hover {
   border-bottom: 4px solid var(--yasil);
 }
 
-/* .nav-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  
-} */
- .nav-right {
+
+  .nav-right {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -222,40 +219,11 @@ nav {
 .has-dropdown.active .dropdown-content {
   display: block;
 }
-/* .overlay .container {
-  width: 80%;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.overlay-text {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  color: #fff;
-  opacity: 0;
-  transform: translateY(20px);
-  position: absolute;
-}
-
-.overlay-text.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.overlay-text p {
-  font: 18px Montserrat;
-  line-height: 1.6;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 0 auto;
-  width: 500px;
-} */
 
 
 .hero__section{
     background: linear-gradient(to top, rgba(0,0,0,0.6), transparent 40%),
-    linear-gradient(to bottom, rgba(0,0,0,0.6), transparent 40%), url(../img/whiteblackbanner.jpg) center/cover;
+    linear-gradient(to bottom, rgba(0,0,0,0.6), transparent 40%), url(../img/whiteblackbanner.webp) center/cover;
     min-height: 100vh;
     position: relative;
 }
@@ -312,7 +280,6 @@ nav {
 .greenborder{
     width: 10px;
     height: auto;
-    /* background: linear-gradient(to bottom, #26d628, #21cc24 , #1db31f, #0e510f); */
     background: var(--yasil);
     margin-top: 25px;
 }
@@ -489,11 +456,9 @@ main{
     width: 100% !important;
     margin: auto;
   }
-  /* .nav-right{
-    display: none;
-  } */
-   .nav-right > a,   /* whatsapp və telegram linkləri */
-  .nav-right .navphone { /* telefon linki */
+
+   .nav-right > a,  
+  .nav-right .navphone { 
     display: none;
     
   }
@@ -516,9 +481,7 @@ main{
   .hero__section-right-texts h1{
     font-size: 88px;
   }
-  /* .hero__section-right-texts h3{
-    font-size: 30px;
-  } */
+ 
    .hero__section-content{
     bottom: 15%
    }
@@ -584,15 +547,14 @@ main{
 
 }
 @media (max-width: 592px){
+  .container{
+    padding: 0;
+  }
   .hero__section-right-texts h1{
     font-size: 36px;
   }
   
-  /* nav{
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 10px;
-  } */
+ 
   #logo img {
       width: 65px;
     }
@@ -624,7 +586,7 @@ main{
         font-size: 7px;
     }
     .downloadnav i {
-    font-size: 14px;  /* icon ölçüsü */
+    font-size: 14px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -633,10 +595,10 @@ main{
     background-color: #333;
   border-radius: 5px;
   display: flex;
-  align-items: center;   /* vertikal ortalama */
-  justify-content: center; /* horizontal ortalama */
-  gap: 6px;  /* text və icon arası məsafə */
-  padding: 6px; /* button ölçüsü */
+  align-items: center;   
+  justify-content: center; 
+  gap: 6px; 
+  padding: 6px;
   line-height: 1;
   }
 
