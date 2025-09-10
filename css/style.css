@@ -192,6 +192,8 @@ nav {
 
 .has-dropdown {
   position: relative;
+  display: flex;
+  align-items: center
 }
 
 .dropdown-content {
@@ -521,7 +523,8 @@ main{
     bottom: 15%
    }
    nav{
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 20px 10px;
    }
    .dropdown-content {
     position: fixed;
@@ -548,7 +551,7 @@ main{
     width: 90px;
   }
   .hero__section{
-    background: url(../img/bgmobile2.jpg) center/cover;
+    background: url(../img/bgmobile2.webp) center/cover;
   }
   
     .hero__section-right-texts h1{
@@ -618,7 +621,7 @@ main{
     margin-top: 8px;
   }
       .nav-right a {
-        font-size: 8px;
+        font-size: 7px;
     }
     .downloadnav i {
     font-size: 14px;  /* icon ölçüsü */
@@ -641,7 +644,7 @@ main{
 }
 @media (max-width: 397px){
   .nav-menu ul li a {
-        font-size: 7px;
+        font-size: 9px;
         padding: 0px 4px;
         font-weight: 700;
     }
