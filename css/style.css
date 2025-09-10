@@ -214,6 +214,7 @@ nav {
 .dropdown-content p{
     font: 14px Montserrat;
     line-height: 1.2;
+    padding-bottom: 5px;
 }
 
 .has-dropdown.active .dropdown-content {
@@ -267,7 +268,8 @@ nav {
 .hero__section-left p{
     color: #ffffff;
     width: 100%;
-    font: 300 10px Montserrat;
+    font: 300 11px Montserrat;
+    /* text-align: justify; */
 }
 
 .hero__section-left{
@@ -485,9 +487,21 @@ main{
     width: 100% !important;
     margin: auto;
   }
-  .nav-right{
+  /* .nav-right{
     display: none;
+  } */
+   .nav-right > a,   /* whatsapp və telegram linkləri */
+  .nav-right .navphone { /* telefon linki */
+    display: none;
+    
   }
+  .nav-right{
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    transform: translateY(0);
+  }
+
   .wrapper{
     display: block;
   }
@@ -533,6 +547,10 @@ main{
   #logo img{
     width: 90px;
   }
+  .hero__section{
+    background: url(../img/bgmobile2.jpg) center/cover;
+  }
+  
     .hero__section-right-texts h1{
     font-size: 61px;
   }
@@ -566,17 +584,25 @@ main{
   .hero__section-right-texts h1{
     font-size: 36px;
   }
+  
   /* nav{
     flex-direction: column;
     gap: 15px;
     margin-top: 10px;
   } */
-  .logo img{
-    width: 80px;
-  }
+  #logo img {
+      width: 65px;
+    }
+        .nav-menu ul li a {
+        font-size: 8px;
+        padding: 0 5px;
+        font-weight: 700;
+    }
 
   .dropdown-content p{
-    font-size: 11px;
+    font-size: 12px;
+    line-height: 18px;
+    
   }
   .dropdown-content {
     position: fixed;
@@ -587,20 +613,36 @@ main{
     z-index: 300;
     text-align: center;
   }
-  .nav-menu ul li a {
-    font-weight: 700;
-  }
+
   .greenborder{
     margin-top: 8px;
   }
-
+      .nav-right a {
+        font-size: 8px;
+    }
+    .downloadnav i {
+    font-size: 14px;  /* icon ölçüsü */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .downloadnav{
+    background-color: #333;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;   /* vertikal ortalama */
+  justify-content: center; /* horizontal ortalama */
+  gap: 6px;  /* text və icon arası məsafə */
+  padding: 6px; /* button ölçüsü */
+  line-height: 1;
+  }
 
 
 }
 @media (max-width: 397px){
   .nav-menu ul li a {
-        font-size: 10px;
-        padding: 0px 10px;
+        font-size: 7px;
+        padding: 0px 4px;
         font-weight: 700;
     }
     .hero__section-right-texts h1{
@@ -621,11 +663,23 @@ main{
     text-align: center;
   }
   .dropdown-content p{
-    font-size: 8px;
+    font-size: 12px;
+    line-height: 18px;
+    width: 90%;
+    margin: auto;
   }
-  #logo img {
-        width: 69px;
+    #logo img {
+        width: 47px;
+    }
+        .nav-right a {
+        font-size: 6px;
+    }
+    .icons a{
+      padding: 10px 5px;
     }
 
+    .container {
+      padding: 0;
+  }
 
 }
